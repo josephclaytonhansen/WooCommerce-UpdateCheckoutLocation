@@ -104,7 +104,9 @@ function changeState(state){
 document.getElementById('billing_state').value = state;
 }
 
-fetch('https://api.ipgeolocation.io/ipgeo?apiKey=096780dab7334fe78bb8ab933f1ed57e')
+//GET YOUR OWN API KEY
+
+fetch('https://api.ipgeolocation.io/ipgeo?apiKey=API_KEY')
         .then((response) => {
             return response.json();
         }).then((data) => {
